@@ -1,6 +1,8 @@
 import streamlit as st
+import pandas as pd
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
-)
+data = {"column1": [1, 2, 3], "column2": [4, 5, 6]}
+df = pd.DataFrame(data)
+
+st.table(df)
+
